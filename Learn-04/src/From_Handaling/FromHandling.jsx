@@ -4,18 +4,18 @@ const FromHandling = () => {
         e.preventDefault();
     }
   return (
-    <form className="max-w-[400px] font-sans" onSubmit={(e)=>{
+    <form className="max-w-100 font-sans" onSubmit={(e)=>{
         onsubmitHandle(e)
     }}>
       <fieldset className="border-2 border-[#3498db] rounded-lg p-5 mb-5">
-        <legend className="bg-[#3498db] text-white px-[15px] py-[5px] rounded border-none font-bold text-[0.9rem]">
+        <legend className="bg-[#3498db] text-white px-3.75 py-1.25 rounded border-none font-bold text-[0.9rem]">
           Contact Details From-I
         </legend>
 
-        <div className="mb-[15px]">
+        <div className="mb-3.75">
           <label
             for="name"
-            className="block mb-[5px] text-[0.85rem] text-[#333]"
+            className="block mb-1.25 text-[0.85rem] text-[#333]"
           >
             Full Name
           </label>
@@ -30,10 +30,10 @@ const FromHandling = () => {
           />
         </div>
 
-        <div className="mb-[15px]">
+        <div className="mb-3.75">
           <label
             for="email"
-            className="block mb-[5px] text-[0.85rem] text-[#333]"
+            className="block mb-1.25 text-[0.85rem] text-[#333]"
           >
             Email Address
           </label>
@@ -46,10 +46,10 @@ const FromHandling = () => {
           />
         </div>
 
-        <div className="mb-[15px]">
+        <div className="mb-3.75">
           <label
             for="phone"
-            className="block mb-[5px] text-[0.85rem] text-[#333]"
+            className="block mb-1.25 text-[0.85rem] text-[#333]"
           >
             Phone Number
           </label>
@@ -63,15 +63,15 @@ const FromHandling = () => {
           />
         </div>
 
-        <fieldset className="border border-dashed border-[#ccc] mt-[10px] p-4 rounded-lg">
-          <legend className="bg-[#3498db] text-white px-[15px] py-[5px] rounded border-none font-bold text-[0.9rem]">
+        <fieldset className="border border-dashed border-[#ccc] mt-2.5 p-4 rounded-lg">
+          <legend className="bg-[#3498db] text-white px-3.75 py-1.25 rounded border-none font-bold text-[0.9rem]">
             Communication Preference
           </legend>
           <div className="flex gap-10">
-            <label className="block mb-[5px] text-[0.85rem] text-[#333] p-2">
+            <label className="block mb-1.25 text-[0.85rem] text-[#333] p-2">
               <input type="radio" name="pref" value="email" /> Email
             </label>
-            <label className="block mb-[5px] text-[0.85rem] text-[#333] p-2">
+            <label className="block mb-1.25 text-[0.85rem] text-[#333] p-2">
               <input type="radio" name="pref" value="phone" /> Phone
             </label>
           </div>
