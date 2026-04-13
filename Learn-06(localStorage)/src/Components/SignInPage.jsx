@@ -21,6 +21,7 @@ const SignInPage = ({switchToLogIn}) => {
         setEmail("")
         setPassword("")
         setConfirm("")
+        alert("✅ Account Created Successfully.")
     }
 
   return (
