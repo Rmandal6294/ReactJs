@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+#light{
+    background-color: azure;
+    color: blueviolet;
+}
+
+#dark {
+    background-color: #333;
+    color: crimson;
+}
