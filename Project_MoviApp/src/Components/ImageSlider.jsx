@@ -7,7 +7,6 @@ const ImageSlider = () => {
 
     const API_KEY = import.meta.env.VITE_IMDB_API_KEY;
 
-    // Fetch data
     const fetchMovies = async () => {
         try {
             const res = await fetch(

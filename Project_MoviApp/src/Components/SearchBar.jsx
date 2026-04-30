@@ -1,7 +1,7 @@
 import { Search} from "lucide-react";
 import MoviesData from "./SearchData";
 
-const SearchBar = ({ searchQuery, setSearchQuery }) => {
+const SearchBar = ({ searchQuery, setSearchQuery, setMovies}) => {
   return (
     <div className="flex items-center justify-around w-full box-content">
       <input
