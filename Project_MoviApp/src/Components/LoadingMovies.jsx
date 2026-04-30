@@ -30,7 +30,7 @@ const LoadingMovies = () => {
             setPagenum(pagenum + 1);
         }
     }} 
-    className="text-white flex flex-wrap items-center justify-around gap-5 w-full h-125 m-auto overflow-auto">
+    className="text-white flex flex-wrap items-center justify-around gap-5 w-full h-full m-auto overflow-auto p-1">
         {movies.map((movie) => (
             <MiniMoviBox
                 key={movie.id}
