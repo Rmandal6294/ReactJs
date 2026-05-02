@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ImageBox from "./ImageBox";
 
-const ImageSlider = () => {
+const ImageSlider = ({ likedMovies, onToggleLike }) => {
     const [popular, setPopular] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -45,6 +45,8 @@ const ImageSlider = () => {
                     total={popular.length}
                     item={popular[currentIndex]}
                     image_url={`https://image.tmdb.org/t/p/w500${popular[currentIndex].poster_path}`}
+                    isLiked={likedMovies.some((m) => m.id === popular[currentIndex].id)}
+                    onToggleLike={onToggleLike}
                 />
             )}
         </aside>
